@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 element.style.fontSize = '180px'; 
                 setTimeout(function() {
                     element.style.fontSize = '150px';
-                },3);
+                },100);
             }
             function animateRotate(element) {
                 element.classList.add('rotating');
