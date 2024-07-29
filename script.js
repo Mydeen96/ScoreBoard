@@ -42,18 +42,21 @@ document.addEventListener('DOMContentLoaded', function(){
                 element.style.fontSize = '180px'; 
                 setTimeout(function() {
                     element.style.fontSize = '150px';
-                }, 3);
+                },3);
             }
             function animateRotate(element) {
-                element.classList.add('rotating')
+                element.classList.add('rotating');
                 setTimeout(function() {
                     element.classList.remove('rotating');
-                }, 300);
+                }, 500);
             }
         resetbtn.addEventListener('click',function(){
+
+                console.log('welocomr');
                 animateRotate(homescore);
                 animateRotate(guestscore);
                 guestscore.style.color = 'red';
+                homescore.style.color = 'red' ;
                 homescore.style.color = 'red' ;
                 homescore.textContent = 0 ;
                 guestscore.textContent = 0 ;
