@@ -1,0 +1,105 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.container{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 40%;
+    min-height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 30px ;
+    background-color: #1B244A;
+    color: white;
+}
+.score{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.score div{
+    /* height: 100%; */
+    margin: 10px 0px;
+    /* border: 2px solid yellow; */
+}
+.head span{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+.board{
+    /* border: 1px solid black; */
+    height: 160px;
+}
+@font-face {
+    font-family: digital;
+    src: url(./font/digital-7.ttf);
+}
+   
+.number{
+    font-family: digital;
+    border-radius: 10px;
+    color: red;
+    height: 100%;
+    width: 170px;
+    background-color: black;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    padding: 10px;
+}
+
+.home-btn , .guest-btn{
+    color:#535F88;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #535F88 ;
+    border-radius: 7px;
+    height: 50px;
+    padding:5px;
+    font-weight: 700;
+    margin: 0px 5px;
+}
+
+#reset-btn{
+    color:#535F88;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: white;
+    outline: none;
+    border: 1px solid #535F88 ;
+    border-radius: 7px;
+    height: 50px;
+    padding:5px 50px;
+    font-weight: 700;
+}
+#reset-btn:active{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.rotating {
+    animation: rotate 0.2s linear;
+}
+

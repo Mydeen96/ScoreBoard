@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board</title>
+    <!-- CSS -->
+     <link rel="stylesheet" href="./style.css">
+     <!-- font -->
+     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="container">
+        <div class="score">
+            <div class="head"><span>HOME</span></div>
+            <div class="board"><span class="number" id="number1" >0</span></div>
+            <div class="button">
+                <button class="home-btn"  data-score="1" >+ 1</button>
+                <button class="home-btn" data-score="2"  >+ 2</button>
+                <button class="home-btn" data-score="3"  >+ 3</button>
+            </div>
+        </div>
+        <div class="score">
+            <div class="head"><span>GUEST</span>
+            </div>
+            <div class="board"><span class="number" id="number2">0</span></div>
+            <div class="button">
+                <button class="guest-btn"  data-score="1" >+ 1</button>
+                <button class="guest-btn" data-score="2" >+ 2</button>
+                <button class="guest-btn" data-score="3" >+ 3</button>
+            </div>
+        </div>
+        <button id="reset-btn"> Reset</button>
+    </div>
+
+    <!-- Script -->
+     <script src="./script.js"></script>
+</body>
+</html>
